@@ -37,8 +37,8 @@ public class Anagrams {
         Optional<Map.Entry<Character, Integer>> anyEntry =
                 charCountMap.entrySet().stream().filter(characterIntegerEntry -> characterIntegerEntry.getValue() > 0).findAny();
 
-        anyEntry.ifPresentOrElse(System.out::println,()->{
-            System.out.println("Anagrams");
+        anyEntry.ifPresentOrElse(characterIntegerEntry -> System.out.println("Anagrams"),()->{
+            System.out.println("Not Anagrams");
         });
     }
 }

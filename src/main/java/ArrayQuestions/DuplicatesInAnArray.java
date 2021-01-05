@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 
 public class DuplicatesInAnArray {
     public static void main(String[] args) {
-        int arr[]=new int[]{1,2,2,17,4,15,8};
+        int arr[]=new int[]{1,2,3,2,4,15,8};
 
         Set<Integer> integers=new HashSet<>();
         for (int i = 0; i < arr.length; i++) {

@@ -27,6 +27,7 @@ class QueueUsingLinkedList
         else
         {
             oldlast.next=last;
+
         }
     }
 
